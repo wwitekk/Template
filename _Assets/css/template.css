@@ -1,0 +1,15 @@
+.content{display: table;
+	width: 95%; 
+	margin-left: auto; margin-right: auto;}
+.col + .col {margin-top: 20px;}
+.col * + * {margin-top: 20px;}
+
+.bg-blue {background: #555B6E; 
+	padding: 20px; color: #fff;}
+
+@media all and (min-width: 600px){
+	.col{float: left; margin-top: 0!important;}
+	.col:first-child{padding-right: 2%; }
+	.col-s{width: 33%;}
+	.col-l{width: 67%;}
+}

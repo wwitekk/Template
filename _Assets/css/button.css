@@ -1,0 +1,16 @@
+.btn {padding: 10px 20px; background: #93ae64;
+	text-transform: uppercase;
+	color: #fff!important; border-radius: 3px;
+	font-weight: bold; font-size: .75em;
+	display: inline-block;
+	cursor: pointer; border: none;}
+.btn:after,
+.productSubmitInput:after{content: '\00A0\203A'}
+.btn:hover,
+.productSubmitInput:hover {background: #82985C;}
+.btn.grey{background: #bdbdbd;}
+.btn.grey:hover{background: #b0b0b0;}
+.btn.prev:after{content: ''}
+.btn.prev:before{content:'\2039\00A0';}
+.btn.no-arrow:after,
+.btn.no-arrow:before {content: '';}
