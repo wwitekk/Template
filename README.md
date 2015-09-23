@@ -9,4 +9,5 @@ Additionally that contains:
 - various header elements
 - simple footer
 - Call To Action boxes builded with Flexbox
+- Owl selector (http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
 
