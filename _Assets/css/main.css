@@ -46,6 +46,8 @@
 	.main-cta {width: 24%; max-width: 24%;}
 }
 /*** old browsers ***/
+.no-flexbox .main-cta_header {height: 2.5em; overflow: hidden;}
+.no-flexbox .main-cta_content {height: 12em; overflow: hidden;}
 
 
 /****************form****************/
