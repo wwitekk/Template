@@ -8,6 +8,6 @@ Needs to:
 Additionally that contains:
 - various header elements
 - simple footer
-- Call To Action boxes builded with Flexbox
+- Call To Action boxes builded with Flexbox (for equal height when various content quantity)
 - Owl selector (http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
 
