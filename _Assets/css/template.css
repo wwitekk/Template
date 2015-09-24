@@ -9,7 +9,7 @@
 
 @media all and (min-width: 600px){
 	.col{float: left; margin-top: 0!important;}
-	.col:first-child{padding-right: 2%; }
+	.col:not(:last-child){padding-right: 2%;}
 	.col-s{width: 33%;}
 	.col-l{width: 67%;}
 }
