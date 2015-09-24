@@ -52,6 +52,15 @@
 
 /****************form****************/
 input{padding: 5px 10px;}
+button,
+input,
+select,
+textarea {
+    color: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
 
 
 .main-footer{background: #eaffc4;
