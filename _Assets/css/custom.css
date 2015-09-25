@@ -1,4 +1,4 @@
 /*.custom > * + * {margin-top: 20px;}*/
-.custom > img:first-of-type{width: 100%;}
-.custom > img {max-width: 100%;}
+.custom img:first-of-type{width: 100%;}
+.custom img {max-width: 100%;}
 .custom p:first-of-type{font-weight: 600;}

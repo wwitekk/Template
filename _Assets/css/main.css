@@ -1,9 +1,11 @@
+body {font-family: lato;}
+
 /****************sidebox****************/
 .side-box * + * {margin-top: 20px;} 
 .side-box {padding: 20px;
 	background: #fff9ba; color: #333;}
 
-/****************main sliderr****************/
+/****************main slider****************/
 .hero-slider{display: table;
 	width: 100%; position: relative;}
 .hero-slider img {max-width: 100%; width: 100%;}
