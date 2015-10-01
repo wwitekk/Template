@@ -11,8 +11,9 @@
 	<link rel="stylesheet" href="./_Assets/css/flex.css">
 	<link rel="stylesheet" href="./_Assets/css/custom.css">
 	<link rel="stylesheet" href="./_Assets/css/button.css">
+	<link rel="stylesheet" href="./_Assets/css/form.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<!-- <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'> -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 9]>
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -69,21 +70,58 @@
 			</ul>
 		</nav>
 		<section id="js-hero-slider" class="hero-slider">
-			<div class="hero-slider_item"><img src="http://placehold.it/1300x410/e8ffdb/333?text=Slide+1" alt="image placeholder"/></div>
-			<div class="hero-slider_item"><img src="http://placehold.it/1300x410/e8ffdb/333?text=Slide+2" alt="image placeholder"/></div>
-			<div class="hero-slider_item"><img src="http://placehold.it/1300x410/e8ffdb/333?text=Slide+3" alt="image placeholder"/></div>
+			<div class="hero-slider_item">  <!-- 25em = 350px -->
+				<picture>
+				  	<source media="(min-width: 25em)" 
+				    	srcset="http://placehold.it/1300x410/e8ffdb/333 1x, 
+				    		http://placehold.it/2600x820/e8ffdb/333 2x">
+				  	<source 
+				    	srcset="http://placehold.it/350x120/e8ffdb/333 1x, 
+				    		http://placehold.it/750x240/e8ffdb/333 2x">
+				  	<!-- fallback -->
+					<img src="http://placehold.it/1300x410/e8ffdb/333" alt="image placeholder"/>
+				</picture>
+			</div>
+			
+			<div class="hero-slider_item">
+				<picture>
+				  	<source media="(min-width: 25em)"
+				    	srcset="http://placehold.it/1300x410/cc8b86/fff, 
+				    		http://placehold.it/2600x820/cc8b86/fff 2x">
+				  	<source 
+				    	srcset="http://placehold.it/350x120/cc8b86/fff 1x, 
+				    		http://placehold.it/750x240/cc8b86/fff 2x">
+				  	<!-- fallback -->
+					<img src="http://placehold.it/1300x410/cc8b86/fff" alt="image placeholder"/>
+				</picture>
+			</div>
+			<div class="hero-slider_item">
+				<picture>
+				  	<source media="(min-width: 25em)"
+				    	srcset="http://placehold.it/1300x410/555b6e/fff 1x, 
+				    		http://placehold.it/2600x820/555b6e/fff 2x">
+				  	<source 
+				    	srcset="http://placehold.it/350x120/555b6e/fff 1x, 
+				    		http://placehold.it/750x240/555b6e/fff 2x">
+				  	<!-- fallback -->
+					<img src="http://placehold.it/1300x410/555b6e/fff" alt="image placeholder"/>
+				</picture>
+			</div>
 		</section> <!-- slider -->
 	</header>
 	
 	<article class="content">
-		<header>
+		<header class="inner-vert-mgr">
 			<h1>Home Page Layout</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores esse ea aliquam quo aspernatur enim reprehenderit facere ipsam magnam, dolores quos perspiciatis fuga dolorum officiis quam! Suscipit quaerat, eum voluptatum!</p>
 		</header>
 		
 		<aside class="flex-context">
 			<div class="main-cta">
-				<img class="main-cta_image" src="http://placehold.it/400x250/cc8b86/fff" alt="image placeholder"/>
+				<img class="main-cta_image" src="http://placehold.it/400x250/cc8b86/fff" 
+					srcset="http://placehold.it/400x250/cc8b86/fff 1x, 
+						http://placehold.it/750x375/cc8b86/fff 2x"
+					alt="image placeholder"/>
 				<div class="main-cta_content">
 					<h3 class="main-cta_header">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto delectus aliquam sunt tenetur, mollitia qui saepe laboriosam, nesciunt aperiam natus, quis commodi. Temporibus, quibusdam. Praesentium.</p>
@@ -91,7 +129,10 @@
 				</div>
 			</div>
 			<div class="main-cta">
-				<img class="main-cta_image" src="http://placehold.it/400x250/cc8b86/fff" alt="image placeholder"/>
+				<img class="main-cta_image" src="http://placehold.it/400x250/cc8b86/fff" 
+					srcset="http://placehold.it/400x250/cc8b86/fff 1x, 
+						http://placehold.it/750x375/cc8b86/fff 2x"
+					alt="image placeholder"/>
 				<div class="main-cta_content">
 					<h3 class="main-cta_header">Officiis, accusantium impedit.</h3>
 					<p>Laboriosam, tempore commodi ullam. </p>
@@ -99,7 +140,10 @@
 				</div>
 			</div>
 			<div class="main-cta">
-				<img class="main-cta_image" src="http://placehold.it/400x250/cc8b86/fff" alt="image placeholder"/>
+				<img class="main-cta_image" src="http://placehold.it/400x250/cc8b86/fff"
+					srcset="http://placehold.it/400x250/cc8b86/fff 1x, 
+						http://placehold.it/750x375/cc8b86/fff 2x" 
+					alt="image placeholder"/>
 				<div class="main-cta_content">
 					<h3 class="main-cta_header">Recusandae, fuga, nostrum.</h3>
 					<p>Possimus unde eum enim! Odio pariatur ipsa magnam, error asperiores alias eligendi sed ab porro officiis inventore eum voluptatem ipsam nisi.</p>
@@ -107,7 +151,10 @@
 				</div>
 			</div>
 			<div class="main-cta">
-				<img class="main-cta_image" src="http://placehold.it/400x250/cc8b86/fff" alt="image placeholder"/>
+				<img class="main-cta_image" src="http://placehold.it/400x250/cc8b86/fff" 
+					srcset="http://placehold.it/400x250/cc8b86/fff 1x, 
+						http://placehold.it/750x375/cc8b86/fff 2x"
+					alt="image placeholder"/>
 				<div class="main-cta_content">
 					<h3 class="main-cta_header">Necessitatibus, magni, dolore?</h3>
 					<p>Amet aut odit iusto officia velit quo eos ea minima. Dignissimos omnis necessitatibus voluptas molestias consequatur, accusamus dolorem. Illo perspiciatis, molestiae sint maxime?</p>
@@ -191,9 +238,28 @@
 				<p>Quis in doloribus, nihil. Accusamus ipsam cum earum repudiandae nisi tempore voluptate eaque at dolorum. Magnam magni deleniti mollitia dignissimos neque, laudantium, esse, delectus, natus placeat impedit quae temporibus modi.</p>
 			</div>
 		</article>
-	
 
 	</div> <!-- /.content -->
+
+
+
+
+<hr>
+<!-- FORM -->		
+	<div class="content inner-vert-mgr">
+		<h1>Contact us</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat aspernatur veniam, voluptas, necessitatibus natus architecto distinctio beatae ut mollitia. Tenetur animi impedit eos facilis labore beatae cum unde debitis?</p>
+		<form action="#">
+			<label>label 1<br /><input type="text" /></label>
+			<label>label 2<br /><input type="text" /></label>
+			<label>label 3<br /><input type="text" /></label>
+			<label>label 4<br /><input type="text" /></label>
+			<label>label 5<br /><input type="text" /></label>
+			<input type="submit" class="btn" value="submit">
+		</form>		
+
+	</div>
+
 
   	
   	<footer class="main-footer">
@@ -217,14 +283,14 @@
 	<script src="./_Assets/js/modernizr.js"></script>
 	<script src="./_Assets/tools/flexslider/jquery.flexslider-min.js"></script>
 
-		
-
-<script type="text/javascript">
-	$('#js-hero-slider').flexslider({
-		selector: ".hero-slider_item",
-		pauseOnHover: true
+	<script type="text/javascript">
+	$(window).load(function() {
+		$('#js-hero-slider').flexslider({
+			selector: ".hero-slider_item",
+			pauseOnHover: true
+		});
 	});
-</script>
+	</script>
 
 </body>
 </html>

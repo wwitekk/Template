@@ -32,7 +32,7 @@ body {font-family: lato;}
 
 /****************main cta****************/
 .main-cta * + * {margin-top: 20px; }
-.main-cta {width: 100%; max-width: 100%;
+.main-cta {width: 100%; max-width: 100%; /*instead of 'width'/'max-width' should be 'flex-basis' but IE8 / Safari 5.1*/
 	margin-top: 20px; background: #fff9ba;
 	position: relative; padding-bottom: 60px;}
 .main-cta_image	{width: 100%;}
@@ -42,29 +42,17 @@ body {font-family: lato;}
 	bottom: 20px;}
 /*** media ***/
 @media all and (min-width: 600px){
-	.main-cta {width: 48%; max-width: 48%;}
+	.main-cta {width: 48%; max-width: 48%;} /*instead of 'width'/'max-width' should be 'flex-basis' but IE8 / Safari 5.1*/
 }
 @media all and (min-width: 1000px){
-	.main-cta {width: 24%; max-width: 24%;}
+	.main-cta {width: 24%; max-width: 24%;} /*instead of 'width'/'max-width' should be 'flex-basis' but IE8 / Safari 5.1*/
 }
 /*** old browsers ***/
 .no-flexbox .main-cta_header {height: 2.5em; overflow: hidden;}
 .no-flexbox .main-cta_content {height: 12em; overflow: hidden;}
 
 
-/****************form****************/
-input{padding: 5px 10px;}
-button,
-input,
-select,
-textarea {
-    color: inherit;
-    font-family: inherit;
-    font-style: inherit;
-    font-weight: inherit;
-}
-
-
+/****************footer****************/
 .main-footer{background: #eaffc4;
 	padding: 20px 0;}
 .main-footer p {display: inline-table;}
