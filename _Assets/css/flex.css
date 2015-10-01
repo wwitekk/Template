@@ -1,3 +1,4 @@
+/***************Flex box********************/
 .flex-context {
 	display: -webkit-box; 
 	display: -webkit-flex; 
@@ -23,8 +24,8 @@
 	        flex-grow:1; 
 }
 
-/*******for old browsers***********/
+/***for old browsers***/
 .no-flexbox .flex-context {display: table;}
 .no-flexbox .flex-context > div {float: left; margin: 0 0.5%;}
-
+/********************************************/
 
