@@ -8,8 +8,8 @@ Needs to:
 
 
 Additionally that contains:
-- various header elements
-- simple footer
+- Responsive images (srcset)
 - Call To Action boxes builded with Flexbox (for equal height when various content quantity)
 - Owl selector (http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
-
+- various header elements
+- simple footer
