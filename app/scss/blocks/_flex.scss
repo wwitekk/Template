@@ -1,0 +1,18 @@
+/***************Flex box********************/
+.flex-context {
+	display: flex; 
+    flex-flow: row wrap; 
+	-webkit-box-pack: justify; 
+	-ms-flex-pack: justify; 
+   justify-content: space-between;
+    align-items: stretch;
+}
+
+.flex-context > div {
+    flex-grow:1; 
+}
+
+/***for old browsers***/
+.no-flexbox .flex-context {display: table;}
+.no-flexbox .flex-context > div {float: left; margin: 0 0.5%;}
+/********************************************/

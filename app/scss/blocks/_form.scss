@@ -1,0 +1,28 @@
+/***************Form*************************/
+button,
+input,
+select,
+textarea {
+    color: inherit; font-family: inherit;
+    font-style: inherit; font-weight: inherit; }
+
+input,
+textarea{padding: 5px 10px; width: 100%;
+	line-height: 2; display: block;}
+
+label{display: inline-block;
+	width: 100%;}
+
+
+form{
+	max-width: 600px; 
+	margin-left: auto; margin-right: auto;
+	> * + * {margin-top: 20px;}
+}
+
+/***media***/
+@media all and (min-width: 50em){ /*800px*/
+	label{width: 49%;}
+	.label100 {width: 100%;}
+}
+/********************************************/

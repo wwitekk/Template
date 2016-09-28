@@ -1,0 +1,22 @@
+/****************main cta****************/
+.main-cta {width: 100%; max-width: 100%; /*instead of 'width'/'max-width' should be 'flex-basis' but IE8 / Safari 5.1*/
+	margin-top: 20px; background: #fff9ba;
+	position: relative; padding-bottom: 60px;
+ 	* + * {margin-top: 20px; }
+}
+.main-cta_image	{width: 100%;}
+.main-cta_content {padding: 20px 5%;
+	margin-top: 0;}
+.main-cta_btn{position: absolute;
+	bottom: 20px;}
+/*** media ***/
+@media all and (min-width: 600px){
+	.main-cta {width: 48%; max-width: 48%;} /*instead of 'width'/'max-width' should be 'flex-basis' but IE8 / Safari 5.1*/
+}
+@media all and (min-width: 1000px){
+	.main-cta {width: 24%; max-width: 24%;} /*instead of 'width'/'max-width' should be 'flex-basis' but IE8 / Safari 5.1*/
+}
+/*** old browsers ***/
+.no-flexbox .main-cta_header {height: 2.5em; overflow: hidden;}
+.no-flexbox .main-cta_content {height: 12em; overflow: hidden;}
+/********************************************/
