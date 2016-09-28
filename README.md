@@ -7,7 +7,7 @@ Needs to:
 - supports IE8
 
 
-Additionally that containsss:
+Additionally that contains:
 - Responsive images (srcset)
 - Call To Action boxes builded with Flexbox (for equal height when various content quantity)
 - Owl selector (http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
