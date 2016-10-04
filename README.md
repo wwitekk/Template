@@ -17,7 +17,7 @@ Additionally the template contains:
 
 ## How to (step by step)
 1. Download
-2. Run nmpm install
+2. Run npm install
 
 
 ##Gulp Tasks
